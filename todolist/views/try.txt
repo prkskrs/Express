@@ -1,0 +1,6 @@
+ <!-- <% if (kindOfDay==="Saturday"||kindOfDay==="Sunday") { %>
+        <h1 style="color:red"> it is a <%= kindOfDay  %> </h2>
+    <% } else { %>
+        <h2 style="color: purple"> it is a <%= kindOfDay %> </h2>
+    <% } %> 
+     -->

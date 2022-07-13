@@ -1,0 +1,24 @@
+<%- include("header") -%> 
+    <div>
+        <ul>
+            <h1>Home</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut lectus arcu bibendum at varius vel pharetra. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Vestibulum lectus mauris ultrices eros. Lacus sed turpis tincidunt id aliquet risus feugiat. Sit amet facilisis magna etiam tempor orci. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Neque vitae tempus quam pellentesque nec nam aliquam sem. Massa sed elementum tempus egestas sed. Facilisi cras fermentum odio eu feugiat. Id velit ut tortor pretium viverra suspendisse. Molestie nunc non blandit massa. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Pellentesque massa placerat duis ultricies lacus sed. Vulputate mi sit amet mauris commodo. Bibendum neque egestas congue quisque egestas diam in arcu.</p>
+        </ul>
+    </div>
+    
+    <div>
+        <ul>
+        <% for( let index = 0; index < newTitles.length; index++ ) { %>
+            <h1>  <%= newTitles[index] %>  </h1> 
+            <p>  <%= newPosts[index] %>  </p> 
+         <% } %>
+        </ul>
+    </div>
+
+    
+
+
+    
+
+</body>
+<%- include("footer") -%> 
