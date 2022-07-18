@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Blog Site</title>
+</head>
+<body>
+    <div class="box">
+    <div id="heading"><h1>Blogs</h1></div>
+    <div>
+        <ul>
+            
+                <% for( let index = 0; index < postItems.length; index++ ) { %>
+                    <form action="/delete" method="post">
+                    <div class="item">
+                        <input type="checkbox" name="checkbox" id="" value=<%=postItems[index]._id%> onChange="this.form.submit()">
+                        <p style="display: inline;"> <%= postItems[index].postContent %>  </p>  <br>
+                    </div>
+                    </form>
+                 <% } %>
+            
+        </ul>
+    </div>
+    <div>
+        <form action="/" method="post">
+            <input type="text" name="postContent" id="" placeholder="Write your post here">
+            <button type="submit" name="postTitle" value=<%= postTitle %> >+</button>
+            </form>
+    </div>
+    </div>
+
+</body>
+</html>
