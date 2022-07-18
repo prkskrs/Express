@@ -50,7 +50,7 @@ app.get("/register",(req,res)=>{
 })
 
 
-// Hashing (md5)
+// Hashing (md5) for "register"
 // app.post("/register",(req,res)=>{
 //     console.log(req.body);
 //     const newUser = new User({
@@ -89,6 +89,7 @@ app.post("/register",(req,res)=>{
    
 })
 
+// Hashing (md5) for "login"
 // app.post("/login",(req,res)=>{
 //     const loginEmail=req.body.username;
 //     const loginPassword=md5(req.body.password);   // Hashing (md5)
